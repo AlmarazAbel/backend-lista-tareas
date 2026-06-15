@@ -4,15 +4,22 @@
   "description": "backend de lista de tareas",
   "main": "index.js",
   "scripts": {
-    "start": "node index" ,
-    "dev": "node --watch index"
+    "start": "node index",
+    "dev": "node --env-file=.env --watch index.js"
   },
-  "keywords": ["server",
+  "keywords": [
+    "server",
     "port",
-    "middlewares","endpoints"],
+    "middlewares",
+    "endpoints"
+  ],
   "author": "Almaraz Abel",
   "license": "ISC",
   "packageManager": "pnpm@11.7.0",
-    
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "morgan": "^1.11.0"
+  }
 }
