@@ -4,6 +4,7 @@ import morgan from 'morgan';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 import '../database/db.js'
+import tareasRoutes from '../routes/index.routes.js';
 
 export default class Server {
     constructor(){
@@ -11,10 +12,18 @@ export default class Server {
         this.app =express()
         this.PORT = process.env.PORT || 3000;
         this.middlewares()
+        this.paths = {
+            tareas: '/api' // Prefijo para todos tus endpoints
+        };
+        this.routes();
+    
     }
 
     //definir metodos
-
+routes(){
+        // Todas las rutas de tareas tendrán el prefijo /api/tareas
+        this.app.use(this.paths.tareas, tareasRoutes);
+    }
 
     middlewares(){
         this.app.use(cors());
