@@ -1,0 +1,18 @@
+{
+  "name": "19-backend-lista-tareas",
+  "version": "1.0.0",
+  "description": "backend de lista de tareas",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index" ,
+    "dev": "node --watch index"
+  },
+  "keywords": ["server",
+    "port",
+    "middlewares","endpoints"],
+  "author": "Almaraz Abel",
+  "license": "ISC",
+  "packageManager": "pnpm@11.7.0",
+    
+  "type": "module"
+}
