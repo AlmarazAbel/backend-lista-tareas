@@ -1,5 +1,5 @@
 import { Router } from "express";
-// Importa tus funciones de controlador (las crearemos en el siguiente paso)
+// Importa tus funciones de controlador
 import {
   crearTarea,
   obtenerTareas,
