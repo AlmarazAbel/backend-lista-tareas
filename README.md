@@ -210,6 +210,6 @@ DELETE /api/tareas/:id
 
 ---
 
-## 👨‍💻 Autor
+## 👨‍💻 Autor Almaraz Abel
 
 Proyecto desarrollado como práctica de Backend utilizando Node.js, Express y MongoDB.
